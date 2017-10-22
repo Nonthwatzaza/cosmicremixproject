@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="212.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/sim_image" android:layout_width="112.0dip" android:layout_height="fill_parent" android:layout_marginTop="17.0dip" android:layout_marginBottom="18.0dip">
+        <FrameLayout android:layout_width="65.0dip" android:layout_height="79.0dip" android:layout_marginLeft="30.0dip">
+            <Button android:id="@id/no_sim1_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:gravity="center" android:id="@id/lock_icon1" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_marginTop="3.0dip" />
+            <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff292929" android:gravity="center" android:layout_width="50.0dip" android:layout_height="46.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="25.0dip" android:text="@string/icon_number_1" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="65.0dip" android:layout_height="79.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="19.0dip">
+            <Button android:id="@id/no_sim2_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:gravity="center" android:id="@id/lock_icon2" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_marginTop="3.0dip" />
+            <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff292929" android:gravity="center" android:layout_width="50.0dip" android:layout_height="46.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="25.0dip" android:text="@string/icon_number_2" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/simLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="17.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="16.0dip">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0sp" android:textColor="#ffb7c4cf" android:gravity="center" android:background="@drawable/sim_card_management_bg_02_h" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="10.0dip" android:text="@string/no_network_card" />
+    </LinearLayout>
+</LinearLayout>

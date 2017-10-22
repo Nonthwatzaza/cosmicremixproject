@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Extra Settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <CheckBoxPreference android:title="Hide Brightness Bar" android:key="mBrightnessController" android:summary="Hide the screen brightness in status bar" android:defaultValue="false" />
+    <PreferenceCategory android:layout="@layout/abhi922isawesomes" android:title="" android:key="bla" />
+</PreferenceScreen>

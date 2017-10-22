@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/auto_brightness_group" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <CheckBox android:id="@id/toggle" android:clickable="false" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_centerVertical="true" android:contentDescription="@string/status_bar_settings_auto_brightness_label" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffd7d7d7" android:gravity="center" android:id="@id/label" android:layout_width="46.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="3.0dip" android:singleLine="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/slider_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/auto_brightness_group" android:layout_toRightOf="@id/brightness_icon" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/slider_split_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.sec.android.touchwiz.widget.TwSeekBarSplit android:id="@id/slider_split" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="9.0" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:gravity="center" android:id="@id/slider_split_text" android:visibility="visible" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <SeekBar android:id="@id/slider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </FrameLayout>
+    <ImageView android:id="@id/brightness_icon" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:src="@drawable/ic_sysbar_brightness" android:layout_alignParentLeft="true" android:contentDescription="@string/accessibility_brightness_icon" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings.romhack">
+    <Preference android:title="@string/how_csc_use" android:key="justKey" android:summary="@string/how_csc_use_summary" style="?android:preferenceInformationStyle" />
+    <PreferenceCategory android:title="@string/glory_twlauncher" />
+    <CheckBoxPreference android:title="@string/twlauncher_tilt" android:key="tilt_effect" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <CheckBoxPreference android:title="@string/twlauncher_page_rotation" android:key="page_rotation" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <CheckBoxPreference android:title="@string/twlauncher_edit_mode" android:key="edit_mode" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <PreferenceCategory android:title="@string/glory_twcontacts" />
+    <CheckBoxPreference android:title="@string/twcontacts_photo" android:key="contacts_list_photo" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <CheckBoxPreference android:title="@string/twcontacts_contacts_call_btn" android:key="contacts_list_call_btn" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <CheckBoxPreference android:title="@string/twcontacts_logs_call_btn" android:key="logs_list_call_btn" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <PreferenceCategory android:title="@string/glory_twbrowser" />
+    <CheckBoxPreference android:title="@string/twbrowser_exit_option" android:key="browser_exit_option" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <CheckBoxPreference android:title="@string/twbrowser_exit_prompt" android:key="browser_exit_prompt" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <CheckBoxPreference android:title="@string/twbrowser_home_menu" android:key="browser_home_page" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <PreferenceCategory android:title="@string/glory_twsettings" />
+    <CheckBoxPreference android:title="@string/twsettings_call_msg_blk" android:key="call_message_block" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <CheckBoxPreference android:title="@string/twsettings_data_reset_password" android:key="security_data_reset_pass" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+    <CheckBoxPreference android:title="@string/twsettings_update_menu" android:key="software_update_menu" android:summaryOn="@string/csc_on" android:summaryOff="@string/csc_off" />
+</PreferenceScreen>

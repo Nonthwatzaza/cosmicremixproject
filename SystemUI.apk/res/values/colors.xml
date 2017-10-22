@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_panel_solid_background">#ff000000</color>
+    <color name="status_bar_recents_app_label_color">#ffffffff</color>
+    <color name="notification_list_shadow_top">#80000000</color>
+    <color name="notification_category_color">#ffadc1d6</color>
+    <color name="tw_status_bar_clear_btn_text">#ffffffff</color>
+    <color name="tw_staus_bar_color_color">#ff959595</color>
+    <color name="tw_holoclock_color">#ffe6e6e6</color>
+    <color name="quick_setting_button_text_color">#ffafc5dc</color>
+    <color name="new_custom_equalizer_fill_color">#96ffffff</color>
+</resources>

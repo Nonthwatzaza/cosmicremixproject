@@ -1,0 +1,19 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: framework-res.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: true
+packageInfo:
+  forcedPackageId: '1'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '16'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework: null
+version: 2.2.1
+versionInfo:
+  versionCode: '16'
+  versionName: 4.1.2-I8262XXBNF1

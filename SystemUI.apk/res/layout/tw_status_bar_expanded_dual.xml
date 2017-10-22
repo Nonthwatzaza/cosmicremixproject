@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/notification_panel" android:background="#00000000" android:paddingTop="@dimen/notification_panel_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/notification_panel_margin_left"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <potato.mariozawa.statusbargradient.Gradient android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/tw_notification_panel_header_height" layout="@layout/tw_status_bar_expanded_header" />
+    </LinearLayout>
+    <com.adi.rom.interface.MusicEqualizerVisualizer android:layout_gravity="bottom" android:id="@id/new_visualizer_view_panel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="1.0dip">
+        <FrameLayout android:id="@id/new_custom_visualizer_view_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.adi.rom.interface.VisualizerView android:id="@id/new_custom_visualizer_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </com.adi.rom.interface.MusicEqualizerVisualizer>
+    <com.panel.Panel android:id="@id/panel" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/tw_close_handle_underlap">
+            <ScrollView android:id="@id/scroll" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="39.5dip" android:overScrollMode="ifContentScrolls">
+                <LinearLayout android:orientation="vertical" android:id="@id/scrollCart" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.spacecakers.layout.BrightnessLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/brightness_controller" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <com.android.systemui.statusbar.policy.ToggleSlider android:id="@id/brightness" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                            <View android:background="@drawable/brightness_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        </LinearLayout>
+                    </com.spacecakers.layout.BrightnessLayout>
+                    <com.pineapple.TabUI.TabButton android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    <com.pineapple.TabUI.TabsContent android:id="@id/tabbutton" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:overScrollMode="never">
+                            <include layout="@layout/admin_content1" />
+                        </ScrollView>
+                        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:overScrollMode="never">
+                            <include layout="@layout/admin_content2" />
+                        </ScrollView>
+                        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:overScrollMode="never">
+                            <include layout="@layout/admin_content3" />
+                        </ScrollView>
+                        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:overScrollMode="never">
+                            <include layout="@layout/admin_content4" />
+                        </ScrollView>
+                        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:overScrollMode="never">
+                            <include layout="@layout/admin_content5" />
+                        </ScrollView>
+                    </com.pineapple.TabUI.TabsContent>
+                    <LinearLayout android:orientation="vertical" android:id="@id/quickpanel_dualsim_layout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <com.android.systemui.statusbar.policy.QuickSim1ButtonLayout android:gravity="left" android:id="@id/QuickSim1ButtonLayout" android:background="@drawable/tw_quick_panel_quick_setting_button_bg" android:focusable="true" android:clickable="true" android:layout_width="145.0dip" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="7.0dip" android:layout_weight="1.0">
+                                <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:id="@id/QuickSim1ButtonImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quick_btn_g_1" />
+                                    <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="left" android:id="@id/QuickSim1ButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+                                </LinearLayout>
+                                <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/multisim_carrier_label1" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                            </com.android.systemui.statusbar.policy.QuickSim1ButtonLayout>
+                            <com.android.systemui.statusbar.policy.QuickSim2ButtonLayout android:gravity="right" android:id="@id/QuickSim2ButtonLayout" android:background="@drawable/tw_quick_panel_quick_setting_button_bg" android:focusable="true" android:clickable="true" android:layout_width="145.0dip" android:layout_height="35.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                                    <ImageView android:id="@id/QuickSim2ButtonImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quick_btn_w_2" />
+                                    <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="left" android:id="@id/QuickSim2ButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+                                </LinearLayout>
+                                <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/multisim_carrier_label2" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                            </com.android.systemui.statusbar.policy.QuickSim2ButtonLayout>
+                        </LinearLayout>
+                        <View android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/noNotificationsTitle" android:focusable="true" android:layout_width="0.0dip" android:layout_height="0.0dip">
+                        <TextView android:textSize="@dimen/status_bar_expanded_notification_category_text_size" android:textStyle="bold" android:textColor="@color/notification_category_color" android:gravity="left|center" android:id="@id/noNotificationsText" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_expanded_notification_category_height" android:text="@string/status_bar_no_notifications_title" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/onGoingCart" android:background="#ff000000" android:focusable="true" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip">
+                        <TextView android:textSize="@dimen/status_bar_expanded_notification_category_text_size" android:textStyle="bold" android:textColor="@color/notification_category_color" android:gravity="left|center" android:id="@id/onGoingNotificationText" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/status_bar_ongoing_events_title" />
+                    </LinearLayout>
+                    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/onGoingItems" android:layout_width="0.0dip" android:layout_height="0.0dip" systemui:rowHeight="@dimen/tw_notification_row_min_height" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/notificationCart" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip">
+                        <RelativeLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="0.0dip">
+                            <TextView android:textSize="@dimen/status_bar_expanded_notification_category_text_size" android:textStyle="bold" android:textColor="@color/notification_category_color" android:gravity="left|center" android:id="@id/latestNotificationText" android:paddingLeft="11.0dip" android:layout_width="180.0dip" android:layout_height="fill_parent" android:text="@string/status_bar_latest_events_title" android:layout_alignParentLeft="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/notificationItems" android:layout_width="0.0dip" android:layout_height="0.0dip" systemui:rowHeight="@dimen/tw_notification_row_min_height" />
+                    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/latestItems" android:layout_width="0.0dip" android:layout_height="0.0dip" systemui:rowHeight="@dimen/tw_notification_row_min_height" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/quickpanel_quick_settings_space" />
+        </LinearLayout>
+    </com.panel.Panel>
+    <com.android.systemui.statusbar.phone.CloseDragHandle android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/close" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/tw_close_handle_height">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/tw_close_handle_height" android:src="@drawable/tw_status_bar_close" android:scaleType="fitXY" />
+            <TextView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Network" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="bottom" android:id="@id/carrier_label" android:layout_width="fill_parent" android:layout_height="@dimen/tw_close_handle_height" android:singleLine="true" />
+        </RelativeLayout>
+    </com.android.systemui.statusbar.phone.CloseDragHandle>
+</FrameLayout>

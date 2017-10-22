@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/exp_music_controls2" android:paddingLeft="2.0dip" android:paddingTop="8.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/musicNowPlaying2" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:layout_width="180.0dip" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:shadowColor="#d9000000" android:shadowDy="2.0" android:shadowRadius="2.0" android:layout_alignParentLeft="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:paddingLeft="11.0dip" android:layout_width="230.0dip" android:layout_height="260.0dip" android:layout_marginRight="0.5dip">
+            <ImageView android:id="@id/anim2stanby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/istirahat" android:scaleType="center" />
+            <ImageView android:id="@id/anim2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/geal_geol" android:scaleType="center" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/music_volume_bg" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="250.0dip" android:layout_marginRight="6.0dip">
+            <TextView android:textSize="14.0dip" android:textStyle="normal" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/textMax2" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" />
+            <com.fiqih.anaknya.mbol.VerticalSeekBar android:layout_gravity="bottom" android:id="@id/volume_seek_bar2" android:layout_width="wrap_content" android:layout_height="200.0dip" />
+            <TextView android:textSize="10.0dip" android:textStyle="normal" android:textColor="#ffcccccc" android:gravity="bottom|center" android:id="@id/textMin2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="VOL" android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffbdc4c7" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/musicControlPrevious2" android:background="@drawable/music_volume_bg" android:padding="8.0px" android:layout_width="90.0dip" android:layout_height="wrap_content" android:src="@drawable/stat_media_previous" android:layout_toLeftOf="@id/musicControlPause2" />
+        <ImageView android:id="@id/musicControlPlay2" android:background="@drawable/music_volume_bg" android:padding="8.0px" android:layout_width="90.0dip" android:layout_height="wrap_content" android:src="@drawable/stat_media_play" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/musicControlPause2" android:background="@drawable/music_volume_bg" android:padding="8.0px" android:layout_width="90.0dip" android:layout_height="wrap_content" android:src="@drawable/stat_media_pause" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/musicControlNext2" android:background="@drawable/music_volume_bg" android:padding="8.0px" android:layout_width="90.0dip" android:layout_height="wrap_content" android:src="@drawable/stat_media_next" android:layout_toRightOf="@id/musicControlPause2" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.899994dip" android:layout_marginBottom="3.899994dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/sim_image" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="65.0dip" android:layout_height="79.0dip" android:layout_marginLeft="65.0dip" android:layout_marginTop="27.0dip">
+                <Button android:id="@id/sim1_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:gravity="center" android:id="@id/lock_icon1" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_marginTop="3.0dip" />
+                <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff292929" android:gravity="center" android:layout_width="50.0dip" android:layout_height="46.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="25.0dip" android:text="@string/icon_number_1" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="65.0dip" android:layout_height="79.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="27.0dip">
+                <Button android:id="@id/sim2_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:gravity="center" android:id="@id/lock_icon2" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_marginTop="3.0dip" />
+                <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff292929" android:gravity="center" android:layout_width="50.0dip" android:layout_height="46.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="25.0dip" android:text="@string/icon_number_2" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/simLayout" android:layout_width="308.0dip" android:layout_height="189.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="8.0dip">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="17.0sp" android:textColor="#ffb7c4cf" android:gravity="bottom" android:id="@id/network" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="11.0dip" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="17.0sp" android:textColor="#ffb7c4cf" android:gravity="top" android:id="@id/phone_number" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:singleLine="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="128.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/simNameLayout" android:background="@drawable/list_selector_background" android:focusable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <ImageView android:gravity="center_vertical" android:id="@id/sim_icon" android:layout_width="24.0dip" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" />
+                    <TextView android:textSize="22.599976sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/sim_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginRight="11.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/activateLayout" android:background="@drawable/list_selector_background" android:focusable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="bottom" android:id="@id/activate_view" android:layout_width="wrap_content" android:layout_height="31.0dip" android:text="@string/activate" />
+                            <TextView android:textSize="15.0sp" android:textColor="#ffb1bcc5" android:gravity="top" android:id="@id/activate_sum" android:layout_width="wrap_content" android:layout_height="29.0dip" android:text="@string/activate_summary" />
+                        </LinearLayout>
+                        <CheckBox android:gravity="center_vertical" android:layout_gravity="right|center" android:id="@id/activate_checkbox" android:focusable="false" android:clickable="false" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginRight="11.0dip" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

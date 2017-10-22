@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_gravity="center" android:paddingBottom="6.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:text="You need to restart Statusbar after using above option. you can use statusbar restarter from market or Hot bot your device."
+  xmlns:android="http://schemas.android.com/apk/res/android" />

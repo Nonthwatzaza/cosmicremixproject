@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#bf000000" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="0.3000455px" android:src="#ff5acbf5" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffa5bed6" android:gravity="left" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="Name :" />
+            <com.zam.statusbar.advanced.MText3 android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff5acbf5" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/moreText3" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:singleLine="true" />
+        </FrameLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="0.3000455px" android:src="#ff5acbf5" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffa5bed6" android:gravity="left" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="City :" />
+            <com.zam.statusbar.advanced.MText4 android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff5acbf5" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/moreText4" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:singleLine="true" />
+        </FrameLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="0.3000455px" android:src="#ff5acbf5" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffa5bed6" android:gravity="left" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="Work:" />
+            <com.zam.statusbar.advanced.MText5 android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff5acbf5" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/moreText5" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:singleLine="true" />
+        </FrameLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="0.3000455px" android:src="#ff5acbf5" />
+    </LinearLayout>
+</LinearLayout>

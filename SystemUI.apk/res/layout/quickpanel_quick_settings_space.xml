@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#00000000" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="39.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/my_profile" />
+    <ScrollView android:id="@id/scroll" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:id="@id/scrollCart" android:paddingBottom="40.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="154.0px">
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px" android:onClick="ProfileButton">
+                    <com.b16h22.statusbar.ProfilePicture android:layout_gravity="center_horizontal" android:id="@id/profile" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_marginTop="1.0px" android:layout_marginRight="1.0px" android:layout_marginBottom="1.0px" android:scaleType="centerCrop" />
+                    <com.b16h22.statusbar.ProfileName android:textSize="11.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@id/profile_name" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="WI-FI" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel1 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Bluetooth" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="154.0px" android:layout_marginTop="4.0px">
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel2 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Sound" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel3 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Mobile Data" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel4 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Rotation" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="154.0px" android:layout_marginTop="4.0px">
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel5 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Torch" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel6 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Flight" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel7 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Location" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="154.0px" android:layout_marginTop="4.0px">
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel8 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Sync" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel9 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="SmartStay" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel10 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Wifi-Hotspot" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="154.0px" android:layout_marginTop="4.0px">
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel11 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="PowerSave" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel12 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Blocking" />
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/settings_button" android:background="@drawable/togglebg" android:layout_width="154.0px" android:layout_height="154.0px" android:layout_marginLeft="2.0px" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="2.0px">
+                    <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel13 android:id="@id/quicksetting_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px" android:text="Driving" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

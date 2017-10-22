@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_marginTop="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings.SimStatePreference android:key="state_preference" />
+    <CheckBoxPreference android:title="@string/paging_mode_title" android:key="paging_mode" android:summary="@string/paging_mode_summary" />
+    <com.android.settings.SimListPreference android:entries="@array/data_service_entries" android:title="@string/data_service_network" android:key="data_service_network" android:summary="@string/data_service_network_summary" android:entryValues="@array/data_service_values" />
+    <PreferenceScreen android:persistent="false" android:title="@string/dsa_dual_sim_always_on" android:key="button_dsa_key" android:summary="@string/dsa_dual_sim_always_on_summary" />
+</PreferenceScreen>
